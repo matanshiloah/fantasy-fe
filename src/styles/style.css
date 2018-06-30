@@ -1,0 +1,303 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#root {
+    height: 100%;
+}
+
+.main, .admin-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.fantasy {
+    flex: 0.75;
+    width: 100%;
+    height: 80%;
+}
+
+.fantasy-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.fantasy-user-teamName, .fantasy-user-username, .fantasy-user-place {
+    flex: 0.1;
+    width: 15%;
+    text-align: center;
+}
+
+.fantasy-user-username, .fantasy-user-place {
+    margin-left: 5%;
+}
+
+.fantasy-container {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.team-team {
+    flex: 0.33;
+    background-image: url('/images/field.png');
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-position {
+    flex: 0.25;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+.team-player {
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    cursor: pointer;
+}
+
+.team-player--remove {
+    position: absolute;
+    margin-top: -3.3%;
+    margin-left: 2.5%;
+    background-color: #C12E2A;
+    cursor: pointer;
+}
+
+.team-player--shirt {
+    background-size: 60% 100%;
+    flex: 0.4;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.team-player--captain {
+    position: absolute;
+    margin-left: 2.5%;
+    background-color: #265A88;
+}
+
+.team-player--bio {
+    flex: 0.3;
+}
+
+.team-player--bio-badge {
+    margin-top: 5px;
+}
+
+.team-player--bio-badge-name, .team-player--bio-badge-score {
+    margin: 2px;
+}
+
+.table-leagueTable {
+    flex: 0.33;
+    margin-right: 5px;
+}
+
+.table-leagueTable--userRow td {
+    background-color: #419641;
+    color: #FFFFFF;
+}
+
+.playersData-data {
+    margin: 0 5px;
+    flex: 0.33;
+    display: flex;
+    flex-direction: column;
+}
+
+.playersData-data--filters {
+    flex: 0.08;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.playersData-data--filters-club, .playersData-data--filters-price, .playersData-data--filters-sortBy {
+    flex: 0.33;
+}
+
+.playersData-data--filters-price, .playersData-data--filters-sortBy {
+    margin-left: 5px;
+}
+
+.playersData-data--main {
+    flex: 0.92;
+}
+
+.playersData-playersTabs, .playersData-player, .playersData-comparison {
+    height: 100%;
+}
+
+.playersData-playersTabs a {
+    color: #555;
+}
+
+.playersData-playersTabs--tab {
+    margin-top: 10px;
+    height: 100%;
+    overflow: scroll;
+}
+
+.playersData-playerItem {
+    display: flex;
+    flex-direction: row;
+    line-height: 35px;
+}
+
+.playersData-playerItem--image, .playersData-playerItem--teamLogo, .playersData-player--title-image, .playersData-comparison--table-image {
+    border: 1px solid black;
+    border-radius: 100%;
+    height: 40px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.playersData-comparison--table-image {
+    width: 50px;
+    margin: 0 auto;
+}
+
+.playersData-playerItem--image, .playersData-playerItem--teamLogo {
+    flex: 0.15;
+}
+
+.playersData-playerItem--teamLogo {
+    border: none;
+}
+
+.playersData-playerItem--name, .playersData-playerItem--price, .playersData-playerItem--points {
+    flex: 0.4;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.playersData-playerItem--price, .playersData-playerItem--points {
+    flex: 0.2;
+}
+
+.playersData-playerItem--name-click {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.playersData-playerItem--add, .playersData-playerItem--remove, .playersData-playerItem--compare {
+    flex: 0.2;
+}
+
+.playersData-player--title-image {
+    float: left;
+    margin-right: 20px;
+    width: 50px;
+}
+
+.playersData-player--title, .playersData-comparison--title {
+    line-height: 35px;
+}
+
+.playersData-player--title-name, .playersData-comparison--title-name {
+    vertical-align: middle;
+}
+
+.playersData-player--title-back, .playersData-comparison--title-back {
+    float: right;
+    margin-top: -9%;
+}
+
+.playersData-player--actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.playersData-player--actions-makeCaptain {
+    flex: 0.3;
+}
+
+.playersData-player--actions-remove {
+    flex: 0.3;
+}
+
+.playersData-comparison--table {
+    text-align: center;
+}
+
+.users-logIn, .users-creator, .admin-logIn {
+    width: 25%;
+}
+
+.users-logIn--email, .users-logIn--password, .users-creator--name, .users-creator--email, .users-creator--password, .users-creator--teamName, .admin-logIn--username, .admin-logIn--password {
+    display: flex;
+    line-height: 35px;
+}
+
+.users-logIn--password, .users-logIn--buttons, .users-creator--email, .users-creator--password, .users-creator--buttons, .users-creator--teamName, .admin-logIn--password, .admin-logIn--buttons {
+    margin-top: 15px;
+}
+
+.users-logIn--email-label, .users-logIn--password-label, .admin-logIn--username-label, .admin-logIn--password-label {
+    flex: 0.2;
+    vertical-align: middle;
+}
+
+.users-creator--name-label, .users-creator--email-label, .users-creator--password-label, .users-creator--teamName-label {
+    flex: 0.3;
+    vertical-align: middle;
+}
+
+.users-logIn--email-input, .users-logIn--password-input, .admin-logIn--username-input, .admin-logIn--password-input {
+    flex: 0.8;
+}
+
+.users-creator--name-input, .users-creator--email-input, .users-creator--password-input, .users-creator--teamName-input {
+    flex: 0.7;
+}
+
+.users-logIn--buttons, .users-creator--buttons, .admin-logIn--buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    text-align: center;
+}
+
+.users-logIn--buttons-logIn, .users-logIn--buttons-createUser, .users-creator--buttons-createUser, .admin-logIn--buttons-logIn {
+    flex: 0.5;
+}
+
+/*.users-logIn--alert {}*/
+
+/*.users-logIn--alert {}*/
+
+/*.users-logIn--alert {}*/
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.panel {
+    height: 100%;
+}
